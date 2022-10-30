@@ -1,0 +1,30 @@
+{
+  "singleQuote": true,
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "quoteProps": "as-needed",
+  "jsxSingleQuote": false,
+  "trailingComma": "es5",
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "bracketSpacing": true,
+  "requirePragma": false,
+  "insertPragma": false,
+  "proseWrap": "preserve",
+  "importOrder": [
+    "^@stores/(.*)$",
+    "^@hooks/(.*)$",
+    "^@utils/(.*)$",
+    "^@constants/(.*)$",
+    "^@hocs/(.*)$",
+    "^@theme/(.*)$",
+    "^@components/(.*)$",
+    "^@types/(.*)$",
+    "^@styles/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}
