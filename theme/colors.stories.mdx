@@ -1,0 +1,76 @@
+<!-- Colors.stories.mdx -->
+
+import { ColorItem, ColorPalette, Meta } from '@storybook/addon-docs';
+import { ThemeProvider, convert, ensure, themes } from '@storybook/theming';
+
+import * as colors from '@/constants/color';
+
+import { palette } from './constants/palette';
+
+<Meta title="Colors" />
+
+# Light color scheme
+
+<div styles={{ background: '#eeeeee', padding: '2rem' }}>
+  <ColorPalette>
+    {Object.entries(palette.light)
+      .filter(([k, c]) => k === 'main')
+      .map(([k, c], i) => (
+        <ColorItem title={k} colors={Object.fromEntries(Object.entries({ ...c }).slice(0, 10))} />
+      ))}
+    {Object.entries(palette.light)
+      .filter(([k, c]) => k === 'main')
+      .map(([k, c], i) => (
+        <ColorItem title={k} colors={Object.fromEntries(Object.entries({ ...c }).slice(10))} />
+      ))}
+    {Object.entries(palette.light)
+      .filter(([k, c]) => k !== 'main' && k !== 'semantic')
+      .map(([k, c]) => (
+        <ColorItem title={k} colors={{ ...c }} />
+      ))}
+    {Object.entries(palette.light)
+      .filter(([k, c]) => k === 'semantic')
+      .map(([k, c]) => (
+        <ColorItem title={k} colors={Object.fromEntries(Object.entries({ ...c }).slice(0, 6))} />
+      ))}
+    {Object.entries(palette.light)
+      .filter(([k, c]) => k === 'semantic')
+      .map(([k, c]) => (
+        <ColorItem title={k} colors={Object.fromEntries(Object.entries({ ...c }).slice(6))} />
+      ))}
+  </ColorPalette>
+</div>
+
+# Dark color scheme
+
+<div style={{ background: '#202020', padding: '2rem' }}>
+  <ThemeProvider theme={ensure(themes.dark)}>
+    <ColorPalette>
+      {Object.entries(palette.dark)
+        .filter(([k, c]) => k === 'main')
+        .map(([k, c], i) => (
+          <ColorItem title={k} colors={Object.fromEntries(Object.entries({ ...c }).slice(0, 10))} />
+        ))}
+      {Object.entries(palette.dark)
+        .filter(([k, c]) => k === 'main')
+        .map(([k, c], i) => (
+          <ColorItem title={k} colors={Object.fromEntries(Object.entries({ ...c }).slice(10))} />
+        ))}
+      {Object.entries(palette.dark)
+        .filter(([k, c]) => k !== 'main' && k !== 'semantic')
+        .map(([k, c]) => (
+          <ColorItem title={k} colors={{ ...c }} />
+        ))}
+      {Object.entries(palette.dark)
+        .filter(([k, c]) => k === 'semantic')
+        .map(([k, c]) => (
+          <ColorItem title={k} colors={Object.fromEntries(Object.entries({ ...c }).slice(0, 6))} />
+        ))}
+      {Object.entries(palette.dark)
+        .filter(([k, c]) => k === 'semantic')
+        .map(([k, c]) => (
+          <ColorItem title={k} colors={Object.fromEntries(Object.entries({ ...c }).slice(6))} />
+        ))}
+    </ColorPalette>
+  </ThemeProvider>
+</div>

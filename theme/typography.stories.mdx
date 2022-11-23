@@ -1,0 +1,37 @@
+<!-- Typography.stories.mdx -->
+
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+
+import { typography } from './constants/typography';
+
+<Meta title="Typography" />
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+# Typography
+
+## regular
+
+**Font:** Noto Sans
+
+**Weights:** 400(regular)
+
+<Typeset
+  fontSizes={[...Object.values(typography).map((el) => el.size)]}
+  fontWeight={400}
+  sampleText={SampleText}
+  fontFamily="Noto Sans"
+/>
+
+## bold
+
+**Font:** Noto Sans
+
+**Weights:** 600(bold)
+
+<Typeset
+  fontSizes={[...Object.values(typography).map((el) => el.size)]}
+  fontWeight={700}
+  sampleText={SampleText}
+  fontFamily="Noto Sans"
+/>
