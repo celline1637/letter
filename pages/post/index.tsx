@@ -1,7 +1,6 @@
 import axios from 'axios';
 import Link from 'next/link';
-import { NextPage } from 'next/types';
-import React, { use, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 type Post = {
   id: number;
@@ -25,6 +24,7 @@ const PostPage = () => {
       setPost(posts);
     })();
   }, []);
+
   return (
     <div>
       Post

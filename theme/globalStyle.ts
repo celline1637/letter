@@ -14,8 +14,8 @@ html,
 body {
   height: 100%;
   font-family: 'Noto Sans', sans-serif;
-  color: ${theme.colors.grayscale.black};
-  background-color: ${theme.colors.grayscale.white};
+  color: ${theme.colors.black};
+  background-color: ${theme.colors.white};
 }
 body,
 div,
