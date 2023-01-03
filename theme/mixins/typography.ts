@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import { fontFamily, typography } from 'theme/constants/typography';
 
-import { FontFamily, Typography } from '@/types/theme/typography';
+import { FontFamily, Typography } from '@types/theme/typography';
 
 const pxToRem = (value: number) => {
   return `${value / 16}rem`;

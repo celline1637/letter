@@ -1,4 +1,4 @@
-import { BoxSizeSet, Direction, PosCenter } from '@/types/theme/position';
+import { BoxSizeSet, Direction, PosCenter } from '@types/theme/position';
 
 const posCenterX: PosCenter = (position = 'absolute') => {
   return `

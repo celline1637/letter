@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import styled from 'styled-components';
 
-import Button from '@/components/common/atoms/Button';
+import Button from 'components/common/atoms/Button';
 
 export default {
   title: 'common/atoms/Button',

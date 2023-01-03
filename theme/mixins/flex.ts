@@ -1,4 +1,4 @@
-import { TFlexColumnSet, TFlexRowSet } from '@/types/theme/flex';
+import { TFlexColumnSet, TFlexRowSet } from '@types/theme';
 
 const flexRowSet: TFlexRowSet = (justify = 'center', align = 'center') => {
   return `
