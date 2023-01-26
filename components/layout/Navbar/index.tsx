@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
+import * as S from './Navbar.styles';
 
 const Navbar = () => {
   return (
-    <div>
+    <S.Navbar>
       <Link href="/">Home</Link>
       <Link href="/post">PostList</Link>
-    </div>
+    </S.Navbar>
   );
 };
 

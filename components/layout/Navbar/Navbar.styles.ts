@@ -1,3 +1,7 @@
 import styled from 'styled-components';
 
-export const Navbar = styled.nav``;
+export const Navbar = styled.nav`
+  position: fixed;
+  top: 0;
+  height: 50px;
+`;
