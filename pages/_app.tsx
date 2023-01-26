@@ -1,6 +1,6 @@
-import Layout from '@components/layout/Layout';
+import Layout from '../components/layout/Layout';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import GlobalStyle from '@theme/globalStyle';
+import GlobalStyle from '../theme/globalStyle';
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../theme/index';
