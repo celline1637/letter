@@ -6,7 +6,9 @@ export const palette = {
     gray20: '#EEEEEE',
     gray30: '#E0E0E0',
     gray60: '#757575',
+    gray90: '#212121',
     black: '#000000',
+    yellow: '#FFE81B',
   },
   dark: {
     white: '#FFFFFF',
@@ -16,5 +18,6 @@ export const palette = {
     gray30: '#2B2B2B',
     gray60: '#969696',
     black: '#000000',
+    yellow: '#FFE81B',
   },
 };

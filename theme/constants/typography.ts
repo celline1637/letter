@@ -1,8 +1,6 @@
 export const fontFamily = {
   default: 'inherit',
   noto: 'Noto Sans',
-  notoKR: 'NotoSansKR',
-  apple: 'AppleSDGothicNeo',
 };
 
 export const typography = {

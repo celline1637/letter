@@ -7,13 +7,13 @@ const GlobalStyle = createGlobalStyle(
   padding: 0;
   -webkit-text-size-adjust: none;
   box-sizing: border-box;
-  font-family: inherit;
+  font-family: 'NeoDunggeunmo','NeoDunggeunmo Code', 'Noto Sans', sans-serif ;
   -webkit-tap-highlight-color : transparent;
 }
 html,
 body {
   height: 100%;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'NeoDunggeunmo','NeoDunggeunmo Code', 'Noto Sans', sans-serif ;
   color: ${theme.colors.black};
   background-color: ${theme.colors.white};
 }

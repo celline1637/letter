@@ -5,7 +5,7 @@ export const Input = styled.label`
 `;
 
 export const Label = styled.p`
-  ${({ theme }) => theme.textSet('body2')};
+  ${({ theme }) => theme.textSet(12)};
   margin-bottom: 4px;
   color: ${({ theme }) => theme.colors.gray60};
 `;
@@ -15,7 +15,7 @@ export const TextArea = styled.input<{ InputSize: 'title' | 'body1' }>`
   padding-bottom: 8px;
   margin-bottom: 8px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.gray30};
-  ${({ theme, InputSize }) => theme.textSet(InputSize === 'title' ? 'title' : 'body1')};
+  ${({ theme, InputSize }) => theme.textSet(InputSize === 'title' ? 20 : 14)};
   font-weight: 700;
 
   &::placeholder {
@@ -24,6 +24,6 @@ export const TextArea = styled.input<{ InputSize: 'title' | 'body1' }>`
 `;
 
 export const HelperText = styled.p`
-  ${({ theme }) => theme.textSet('body2')};
+  ${({ theme }) => theme.textSet(12)};
   color: ${({ theme }) => theme.colors.sub.red50};
 `;

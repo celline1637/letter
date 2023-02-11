@@ -37,9 +37,9 @@ const colorStyles = css<ButtonProps>`
       `;
 
     return css`
-      border: none;
+      border: 1.5px solid ${({ theme }) => theme.colors.black};
       background: ${({ theme }) => color ?? theme.colors.purple50};
-      color: white;
+      color: ${({ theme }) => theme.colors[color === 'black' ? 'white' : 'black']};
       &:not(:disabled):hover {
         background: ${({ theme }) => color ?? theme.colors.purple60};
         filter: brightness(${color ? '90%' : '100%'});
@@ -68,9 +68,9 @@ export const Button = styled.button<ButtonProps>`
   ${({ theme }) => theme.flexRowSet()};
   gap: 0.4rem;
   width: max-content;
-  padding: 1rem;
-  border-radius: 30px;
-  ${({ theme }) => theme.textSet('subTitle')};
+  padding: 10px;
+  border-radius: 12px;
+  ${({ theme }) => theme.textSet(16)};
   font-weight: 600;
   outline: none;
   word-break: break-all;

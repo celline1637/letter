@@ -10,17 +10,16 @@ export const Background = styled.div`
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  max-width: 375px;
-  padding: 0 1rem;
+  max-width: 500px;
   position: relative;
   background-color: ${({ theme }) => theme.colors.white};
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     max-width: 100%;
   }
 `;
 
 export const Main = styled.main`
-  margin-top: 50px;
-  min-height: calc(100vh - 50px);
+  /* margin-top: 50px;
+  min-height: calc(100vh - 50px); */
 `;
