@@ -2,7 +2,7 @@
 import Button from 'components/common/Button';
 import { useRouter } from 'next/router';
 import React from 'react';
-import * as S from './home.styles';
+import * as S from '../styles/home.styles';
 
 const HomePage = () => {
   const router = useRouter();
